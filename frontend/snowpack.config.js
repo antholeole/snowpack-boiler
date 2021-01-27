@@ -4,6 +4,7 @@ module.exports = {
   mount: {
     public: '/',
     src: '/_dist_',
+    'node_modules/@blueprintjs/core/lib': '/styles'
   },
   plugins: [
     '@snowpack/plugin-react-refresh',
@@ -11,19 +12,10 @@ module.exports = {
     '@snowpack/plugin-typescript',
     '@snowpack/plugin-sass'
   ],
-  install: [
-    /* ... */
-  ],
-  installOptions: {
-    /* ... */
-  },
   devOptions: {
-    /* ... */
+    output: 'stream',
   },
   buildOptions: {
-    /* ... */
-  },
-  proxy: {
     /* ... */
   },
   alias: {
